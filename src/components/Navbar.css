@@ -16,7 +16,8 @@
 
 .nav-shell {
   width: 100%;
-  max-width: var(--container);
+  max-width: calc(var(--container) + 220px);
+  margin: 0 auto;
   display: flex;
   align-items: center;
   justify-content: space-between;
