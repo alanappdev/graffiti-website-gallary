@@ -51,23 +51,6 @@ export default function Navbar() {
           <span />
         </button>
       </nav>
-
-      <div className={`nav-mobile ${open ? "is-open" : ""}`}>
-        <ul>
-          {LINKS.map((l) => (
-            <li key={l.href}>
-              <a href={l.href} onClick={() => setOpen(false)}>
-                {l.label}
-              </a>
-            </li>
-          ))}
-          <li>
-            <a href="#find-us" className="nav-mobile-cta" onClick={() => setOpen(false)}>
-              Order now
-            </a>
-          </li>
-        </ul>
-      </div>
     </header>
   );
 }
